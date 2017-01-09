@@ -2,10 +2,10 @@
   "name": "react-sinatra-ujs",
   "version": "1.0.0",
   "description": "Mounting components built with webpack",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "main": "dist/react-sinatra-ujs.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/namusyaka/react-sinatra-ujs.git"
@@ -23,6 +23,9 @@
   "dependencies": {
     "react": "*",
     "react-dom": "*"
+  },
+  "scripts": {
+    "build": "babel src --out-dir dist"
   },
   "devDependencies": {
     "babel-cli": "^6",
