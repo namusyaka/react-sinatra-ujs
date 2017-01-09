@@ -1,0 +1,31 @@
+{
+  "name": "react-sinatra-ujs",
+  "version": "1.0.0",
+  "description": "Mounting components built with webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/namusyaka/react-sinatra-ujs.git"
+  },
+  "keywords": [
+    "react",
+    "sinatra"
+  ],
+  "author": "namusyaka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/namusyaka/react-sinatra-ujs/issues"
+  },
+  "homepage": "https://github.com/namusyaka/react-sinatra-ujs#readme",
+  "dependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
+  "devDependencies": {
+    "babel-cli": "^6",
+    "babel-preset-es2015": "^6"
+  }
+}
