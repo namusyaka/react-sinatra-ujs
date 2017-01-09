@@ -36,7 +36,9 @@ function mountComponents(components) {
     if (typeof component === 'undefined') {
       var message = 'Cannot find component: ' + componentName;
 
-      if (console && console.log) console.log('%c[react-sinatra-ujs] %c' + message + ' for element', 'font-weight: bold', '', node);
+      if (console && console.log) {
+        console.log('%c[react-sinatra-ujs] %c' + message + ' for element', 'font-weight: bold', '', node);
+      }
 
       throw new Error('[react-sinatra-ujs] ' + message);
     } else {
