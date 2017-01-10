@@ -18,13 +18,7 @@ export function mountComponents(components, configOverrides = {}) {
     const props = propsJson && JSON.parse(propsJson);
 
     if (typeof(component) === 'undefined') {
-      const message = `Cannot find component: ${componentName}`;
-
-      if (console && console.log) {
-        console.log(`%c[react-sinatra-ujs] %c${message} for element`, 'font-weight: bold', '', node);
-      }
-
-      throw new Error(`[react-sinatra-ujs] ${message}`);
+      throw new Error(`Cannot find component: ${componentName}`);
     } else {
       ReactDOM.render(React.createElement(component, props), node);
     }

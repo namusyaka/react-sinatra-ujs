@@ -34,13 +34,7 @@ function mountComponents(components) {
     var props = propsJson && JSON.parse(propsJson);
 
     if (typeof component === 'undefined') {
-      var message = 'Cannot find component: ' + componentName;
-
-      if (console && console.log) {
-        console.log('%c[react-sinatra-ujs] %c' + message + ' for element', 'font-weight: bold', '', node);
-      }
-
-      throw new Error('[react-sinatra-ujs] ' + message);
+      throw new Error('Cannot find component: ' + componentName);
     } else {
       _reactDom2.default.render(_react2.default.createElement(component, props), node);
     }
