@@ -1,5 +1,7 @@
 # react-sinatra-ujs
 
+[![Build Status](https://travis-ci.org/namusyaka/react-sinatra-ujs.svg?branch=master)](https://travis-ci.org/namusyaka/react-sinatra-ujs)
+
 `react-sinatra-ujs` mounts components built with webpack.
 
 This is for [react-sinatra](https://github.com/namusyaka/react-sinatra)
